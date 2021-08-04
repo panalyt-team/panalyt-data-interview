@@ -2,15 +2,13 @@
 
 # Overall Steps:
 
-1. Develop the SQL query to answer the business question.
-  
-2. Create a docker image that does the following:
- 
+1. Fork this repository
+2. Develop the SQL query to answer the business question.
+3. Create a docker image that does the following:
    A. Starts PostgreSQL/MySQL.
-   
    B. Initializes table based on the file mounted in `/opt/data/`.
    
-3. Executing `docker run` to start the container should run and print out the result of the SQL query stored in `/opt/sql/report.sql`.
+4. Executing `docker run` to start the container should run and print out the result of the SQL query stored in `/opt/sql/report.sql`.
 
 
 
@@ -18,9 +16,9 @@
 
 Swan.com is a recruitment agency that is interested in figuring out key recruitment seasons for new candidates. At Swan, any month that has upwards of 1000 applications is considered a successful one. Furthermore, if 3 or more consecutive months are successful, they identify these consecutive months as a successful 'season' of applications. 
 
-Recently, you're tasked with finding out all the successful seasons of applications that Swan has had over the last few years. You are provided with their ATS data: https://drive.google.com/file/d/15c2x3YwI6uBRoungWZqUAE9k5RUTEj4E/
+Recently, you're tasked with finding out all the successful seasons of applications that Swan has had over the last few years. You are provided with their ATS data : applications.csv
 
-The provided link contains a csv file with the following schema:
+The CSV file has the following schema:
 
 
 
