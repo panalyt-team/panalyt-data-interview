@@ -9,8 +9,8 @@
    A. Starts PostgreSQL/MySQL.
    
    B. Initializes table based on the file mounted in `/opt/data/`.
- 
-3. Run and print out the result of the SQL query stored in `/opt/sql/report.sql`.
+   
+3. Executing `docker run` to start the container should run and print out the result of the SQL query stored in `/opt/sql/report.sql`.
 
 
 
